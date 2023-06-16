@@ -11,6 +11,8 @@ export const Navbar = () => {
 			</Link>
 			</div>
 			<div className="rightSide">
+				<input className="search" type="text" placeholder="Search Coins..."/>
+				<button>Search</button>
 				<div className="loginButton ml-auto">
 					<Link to="/Login">
 						<button className="btn btn-primary">Login</button>
