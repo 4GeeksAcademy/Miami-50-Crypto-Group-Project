@@ -4,15 +4,21 @@ import './navbar.css';
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
+		<nav className="navbar">
+			<div className="leftSide">
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">Crypto App</span>
+				<span className="Logo h2">Crypto App</span>
 			</Link>
-			<div className="ml-auto">
-				<Link to="/Login">
-					<button className="btn btn-primary">Login</button>
-				</Link>
+			</div>
+			<div className="rightSide">
+				<div className="loginButton ml-auto">
+					<Link to="/Login">
+						<button className="btn btn-primary">Login</button>
+					</Link>
+				</div>
 			</div>
 		</nav>
 	);
 };
+
+export default Navbar;
